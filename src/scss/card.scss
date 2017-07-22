@@ -1,0 +1,49 @@
+.card {
+    display: inline-block;
+    width: 70px;
+    height: 93px;
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(#000, 0.4);
+    background: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    text-indent: 5px;
+    line-height: 1;
+    color: #4B4E56;
+  
+    &.suit-hearts, &.suit-diamonds {
+        color: #FD6465;
+    }
+  
+    &:after {
+        display: block;
+        background-size: 100% 100%;
+        width: 25px;
+        height: 25px;
+        margin-left: 1px;
+        margin-top: 5px;
+        content: '';
+    }
+  
+    &.suit-hearts:after {
+        background-image: url('http://svgur.com/i/1xX.svg');
+    }
+    &.suit-diamonds:after {
+        background-image: url('http://svgur.com/i/1yu.svg');
+    }
+    &.suit-clubs:after {
+        background-image: url('http://svgur.com/i/1z2.svg');
+    }
+    &.suit-spades:after {
+        background-image: url('http://svgur.com/i/1xr.svg');
+    }
+    
+    &.rank-j {
+        text-indent: 6px;
+    }
+    &.rank-10 {
+        text-indent: 2px;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "gamenight-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Frontend website for GAMENIGHT",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "http-server docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Bovey <dan@danbovey.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "gridlex": "^2.3.7",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "http-server": "^0.10.0",
+    "run-sequence": "^1.2.2"
+  },
+  "devDependencies": {
+    "gulp-import-css": "^0.1.3"
+  }
+}

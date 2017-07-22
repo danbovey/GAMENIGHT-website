@@ -1,0 +1,124 @@
+.monopoly-money {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 110px;
+    padding: 5px;
+    color: #3C4D55;
+
+    &:after {
+        display: block;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        border: 5px solid #3C4D55;
+        content: '';
+    }
+    &:before {
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        width: calc(100% - 26px);
+        height: calc(100% - 26px);
+        background: #3C4D55;
+        content: '';
+    }
+
+    .brand {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 3px 5px 0;
+        font-size: 9px;
+        line-height: 1;
+    }
+    
+    .left, .right {
+        position: absolute;
+        top: 20px;
+        width: 32px;
+        padding: 1px;
+        border-radius: 15px;
+        font-size: 11px;
+        text-align: center;
+    }
+    .left {
+        left: 20px;
+    }
+    .right {
+        right: 20px;
+    }
+    .amount.right {
+        top: initial;
+        bottom: 20px;
+    }
+    .amount.center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5px 8px;
+        border-radius: 50%;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .currency {
+        display: inline-block;
+        transform: rotate(180deg);
+
+        &.left {
+            top: initial;
+            bottom: 20px;
+        }
+    }
+
+    &.amount-1 {
+        background-color: darken(saturate(#FCF7C5, 5%), 10%);
+
+        .brand, .amount, .currency {
+            background-color: darken(saturate(#FCF7C5, 5%), 10%);
+        }
+    }
+    &.amount-5 {
+        background-color: darken(saturate(#E0E4E3, 5%), 10%);
+
+        .brand, .amount, .currency {
+            background-color: darken(saturate(#E0E4E3, 5%), 10%);
+        }
+    }
+    &.amount-10 {
+        background-color: darken(saturate(#C8DBFB, 5%), 10%);
+
+        .brand, .amount, .currency {
+            background-color: darken(saturate(#C8DBFB, 5%), 10%);
+        }
+    }
+    &.amount-20 {
+        background-color: darken(saturate(#ECF1DD, 5%), 10%);
+
+        .brand, .amount, .currency {
+            background-color: darken(saturate(#ECF1DD, 5%), 10%);
+        }
+    }
+    &.amount-50 {
+        background-color: darken(saturate(#C8CBEE, 5%), 10%);
+
+        .brand, .amount, .currency {
+            background-color: darken(saturate(#C8CBEE, 5%), 10%);
+        }
+    }
+    &.amount-100 {
+        background-color: darken(saturate(#F2D9C3, 5%), 10%);
+
+        .brand, .amount, .currency {
+            background-color: darken(saturate(#F2D9C3, 5%), 10%);
+        }
+    }
+    &.amount-500 {
+        background-color: darken(saturate(#ECCDDD, 5%), 10%);
+
+        .brand, .amount, .currency {
+            background-color: darken(saturate(#ECCDDD, 5%), 10%);
+        }
+    }
+}
