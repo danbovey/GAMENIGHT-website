@@ -1,0 +1,51 @@
+.room {
+    position: relative;
+    padding-bottom: 50px;
+    color: $color-secondary;
+
+    .grid {
+        margin: 0;
+
+        .image {
+            padding: 0;
+        }
+    }
+
+    .image {
+        position: relative;
+
+        img {
+            width: 100%;
+            clip-path: url(#room-mask);
+        }
+        svg {
+            height: 0;
+        }
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    @media(min-width: 768px) {
+        .grid {
+            margin: 0 -0.5rem;
+
+            .image {
+                padding: 0 0.5rem 1rem;
+            }
+        }
+        .content-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        h3 {
+            margin-top: 30px;
+            font-size: 48px;
+        }
+    }
+}

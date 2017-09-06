@@ -16,6 +16,7 @@
 
 .landing {
     position: relative;
+    overflow: hidden;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABY0lEQVQ4T32UCQ7CIBBFIT0jPSQ9JOZPfOSJRhJTW4ZZ/kKfc173fbc5Z3uep40x6pn3rOzxPXtZ7OeZfc6stVpvrV0kS0BW3hPkYPZyiALsu1BPh3SSRAmqSj21WiX28ntis4jPXnVIVySjAxLRHQVIlO9JxkoTfYzxkZDx3WkqAwEJwNbN5GwlPINTyUCnE35JaBINV4281roIhkFGM0k+aCiqqzfehaVHTiDdQRDjmiQTw38Y/2AZSRh8axAygAOGPVl1iIjTBaTwjWBwZkQ6t9CL5WAIYwBux4CXBW3MwBkeauTTcidJtiFwnNhhx0qIDIr23rdY+W6yEPPppE1enGKxWsRUtVf/uSUNlPVsH49rPZ5JwRbG98ghBdEyjq8srGW3oASSgnFivm4bKvnqsjV/CR/p7IQcth7B0qP6YrUtKbK9fJrd2jp9jVYtbENWwqZlX1lmnqQcTDJ7nXPZfwHpQto/0GsPRQAAAABJRU5ErkJggg==);
     background-color: $color-secondary;
 
