@@ -2,20 +2,25 @@
     display: flex;
     align-items: center;
     padding: 20px 30px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABY0lEQVQ4T32UCQ7CIBBFIT0jPSQ9JOZPfOSJRhJTW4ZZ/kKfc173fbc5Z3uep40x6pn3rOzxPXtZ7OeZfc6stVpvrV0kS0BW3hPkYPZyiALsu1BPh3SSRAmqSj21WiX28ntis4jPXnVIVySjAxLRHQVIlO9JxkoTfYzxkZDx3WkqAwEJwNbN5GwlPINTyUCnE35JaBINV4281roIhkFGM0k+aCiqqzfehaVHTiDdQRDjmiQTw38Y/2AZSRh8axAygAOGPVl1iIjTBaTwjWBwZkQ6t9CL5WAIYwBux4CXBW3MwBkeauTTcidJtiFwnNhhx0qIDIr23rdY+W6yEPPppE1enGKxWsRUtVf/uSUNlPVsH49rPZ5JwRbG98ghBdEyjq8srGW3oASSgnFivm4bKvnqsjV/CR/p7IQcth7B0qP6YrUtKbK9fJrd2jp9jVYtbENWwqZlX1lmnqQcTDJ7nXPZfwHpQto/0GsPRQAAAABJRU5ErkJggg==);
+    background-color: $color-secondary;
 
     @media(min-width: 992px) {
         padding-left: 40px;
         padding-right: 40px;
     }
 
-    .logo {
+    .logo a {
         display: flex;
         align-items: center;
+        font-size: 32px;
+        text-decoration: none;
+        color: inherit;
 
         img {
-            width: 42px;
-            height: 42px;
-            margin-right: 18px;
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
         }
     }
     .nav-mobile {
