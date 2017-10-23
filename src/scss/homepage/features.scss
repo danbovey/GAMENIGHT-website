@@ -1,6 +1,10 @@
 section.features {
-    padding-bottom: 75px;
+    padding-bottom: 40px;
     color: $color-secondary;
+
+    @media(min-width: 768px) {
+        padding-bottom: 75px;
+    }
 
     .feature {
         max-width: 80vw;

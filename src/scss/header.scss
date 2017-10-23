@@ -1,18 +1,12 @@
 .header {
-    display: flex;
-    align-items: center;
     padding: 20px 30px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABY0lEQVQ4T32UCQ7CIBBFIT0jPSQ9JOZPfOSJRhJTW4ZZ/kKfc173fbc5Z3uep40x6pn3rOzxPXtZ7OeZfc6stVpvrV0kS0BW3hPkYPZyiALsu1BPh3SSRAmqSj21WiX28ntis4jPXnVIVySjAxLRHQVIlO9JxkoTfYzxkZDx3WkqAwEJwNbN5GwlPINTyUCnE35JaBINV4281roIhkFGM0k+aCiqqzfehaVHTiDdQRDjmiQTw38Y/2AZSRh8axAygAOGPVl1iIjTBaTwjWBwZkQ6t9CL5WAIYwBux4CXBW3MwBkeauTTcidJtiFwnNhhx0qIDIr23rdY+W6yEPPppE1enGKxWsRUtVf/uSUNlPVsH49rPZ5JwRbG98ghBdEyjq8srGW3oASSgnFivm4bKvnqsjV/CR/p7IQcth7B0qP6YrUtKbK9fJrd2jp9jVYtbENWwqZlX1lmnqQcTDJ7nXPZfwHpQto/0GsPRQAAAABJRU5ErkJggg==);
     background-color: $color-secondary;
 
-    @media(min-width: 992px) {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
     .logo a {
         display: flex;
         align-items: center;
+        justify-content: center;
         font-size: 32px;
         text-decoration: none;
         color: inherit;
@@ -23,79 +17,76 @@
             margin-right: 15px;
         }
     }
-    .nav-mobile {
-        display: flex;
-        justify-content: flex-end;
-        flex: 1;
-        font-size: 15px;
-
-        .btn {
-            display: flex;
-            align-items: center;
-            padding: 0;
-            background: none;
-            text-transform: uppercase;
-            color: rgba(#FFF, 0.8);
-        }
-        img {
-            margin-right: 5px;
-        }
-
-        @media(min-width: 768px) {
-            display: none;
-        }
-    }
     .nav {
-        display: none;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 49%;
+        margin-top: 10px;
 
-        @media(min-width: 768px) {
-            display: block;
-        }
-    }
-    .nav a {
-        position: relative;
-        margin-right: 20px;
-        text-decoration: none;
-        color: inherit;
+        a {
+            position: relative;
+            margin-right: 20px;
+            text-decoration: none;
+            color: inherit;
 
-        &:last-child {
-            margin-right: 0;
-        }
-            
-        &:not(.btn) {
-            padding: 5px 0;
+            &:last-child {
+                margin-right: 0;
+            }
+                
+            &:not(.btn) {
+                padding: 5px 0;
 
-            &:hover, &:focus {
+                &:hover, &:focus {
+                    &:after {
+                        width: 60%;
+                    }
+                }
+
                 &:after {
-                    width: 60%;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -1px;
+                    width: 0;
+                    height: 3px;
+                    border-radius: 3px;
+                    transform: translateX(-50%);
+                    background: $color-primary;
+                    transition: width 0.15s ease-in-out;
+                    content: '';
                 }
             }
+        }
+        .btn {
+            background: none;
+            border: 2px solid #29C9EA;
+            color: #29C9EA;
+        }
+        
+        &.actions {
+            margin-left: auto;
+            text-align: right;
+        }
+    }
 
-            &:after {
-                position: absolute;
-                left: 50%;
-                bottom: -1px;
-                width: 0;
-                height: 3px;
-                border-radius: 3px;
-                transform: translateX(-50%);
-                background: $color-primary;
-                transition: width 0.15s ease-in-out;
-                content: '';
+    @media(min-width: 600px) {
+        display: flex;
+        align-items: center;
+
+        .logo a {
+            justify-content: initial;
+        }
+        .nav {
+            width: initial;
+            margin-top: 0;
+            
+            &.pages {
+                flex: 1;
+                text-align: center;
             }
         }
     }
-    .nav .btn {
-        background: none;
-        border: 2px solid #29C9EA;
-        color: #29C9EA;
-    }
-    .nav.pages {
-        flex: 1;
-        text-align: center;
-    }
-    .nav.actions {
-        margin-left: auto;
-        text-align: right;
+    @media(min-width: 992px) {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
