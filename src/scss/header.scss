@@ -83,6 +83,9 @@
                 flex: 1;
                 text-align: center;
             }
+            &.actions {
+                min-width: 240px;
+            }
         }
     }
     @media(min-width: 992px) {
