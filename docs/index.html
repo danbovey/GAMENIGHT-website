@@ -24,16 +24,16 @@
 <body>
     <section class="landing">
         <header class="header">
-            <div class="logo">
-                <img src="/img/logo.svg" alt="GAMENIGHT">
-                <h1>GAMENIGHT</h1>
-            </div>
-            <div class="nav-mobile">
-                <button class="btn" id="toggle-nav">
-                    <img src="/img/menu.svg" alt="Menu" />
-                    Menu
-                </button>
-            </div>
+            <h1 class="logo">
+                <a href="/">
+                    <img src="/img/logo.svg" alt="">
+                    GAMENIGHT
+                </a>
+            </h1>
+            <nav class="nav pages">
+                <a href="/games">Games</a>
+                <a href="/faq">FAQ</a>
+            </nav>
             <nav class="nav actions">
                 <a href="https://app.gamenight.gg/login">Log in</a>
                 <a href="https://app.gamenight.gg/signup" class="btn">Sign up</a>
@@ -42,14 +42,42 @@
         <div class="container">
             <div class="landing-text">
                 <h1>Your ultimate game night awaits</h1>
-                <h2>Web platform for playing multiplayer party games</h2>
-                <h3>Coming soon</h3>
+                <h2>A web platform for playing multiplayer party games</h2>
+                <div class="apps">
+                    <a href="https://app.gamenight.gg" class="btn btn-primary">
+                        <div class="image">
+                            <img src="/img/chrome.svg" alt="Web">
+                        </div>
+                        <div class="text">
+                            <p class="subtitle">Free to play</p>
+                            <p class="place">Web Version</p>
+                        </div>
+                    </a>
+                    <!-- <a class="btn btn-primary muted">
+                        <div class="image">
+                            <img src="/img/ios.svg" alt="iOS">
+                        </div>
+                        <div class="text">
+                            <p class="subtitle">iOS</p>
+                            <p class="place">App Store</p>
+                        </div>
+                    </a>
+                    <a class="btn btn-primary muted">
+                        <div class="image">
+                            <img src="/img/android.svg" alt="Android">
+                        </div>
+                        <div class="text">
+                            <p class="subtitle">Android</p>
+                            <p class="place">Google Play</p>
+                        </div>
+                    </a> -->
+                </div>
             </div>
             <div class="landing-image">
                 <div class="cards">
                     <div class="card suit-spades rank-a">A</div>
                     <div class="card suit-spades rank-j">J</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="piece piece-right"><path fill="#FBE508" d="M64,123C31.467,123,5,96.533,5,64S31.467,5,64,5c32.533,0,59,26.467,59,59S96.533,123,64,123z"/><path fill="#DBC806" d="M64,10c29.775,0,54,24.224,54,54s-24.225,54-54,54c-29.776,0-54-24.224-54-54S34.224,10,64,10 M64,0 C28.654,0,0,28.654,0,64s28.654,64,64,64c35.347,0,64-28.654,64-64S99.347,0,64,0L64,0z"/><path fill="#DBC806" d="M87.101,71.916v-4.137H77.62v4.137H67.391V47.693c6.688-1.544,11.693-7.536,11.693-14.686	c0-8.317-6.766-15.083-15.083-15.083c-8.317,0-15.084,6.766-15.084,15.083c0,7.15,5.006,13.141,11.693,14.686v24.223H24v18.385	c0,3.185,2.59,5.775,5.774,5.775h68.451c3.185,0,5.774-2.59,5.774-5.775V71.916H87.101z M56.674,33.007	c0-4.04,3.287-7.327,7.327-7.327c4.04,0,7.326,3.287,7.326,7.327s-3.287,7.327-7.326,7.327	C59.961,40.334,56.674,37.047,56.674,33.007z M96.242,88.319H31.757v-8.646h64.485V88.319z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="piece piece-right"><path fill="#FAE400" d="M64 123C31.467 123 5 96.533 5 64S31.467 5 64 5s59 26.467 59 59-26.467 59-59 59z"/><path fill="#DAC825" d="M64 10c29.775 0 54 24.224 54 54s-24.225 54-54 54c-29.776 0-54-24.224-54-54s24.224-54 54-54m0-10C28.654 0 0 28.654 0 64s28.654 64 64 64c35.347 0 64-28.654 64-64S99.347 0 64 0z"/><path fill="#DAC825" d="M64 30.36c-18.58 0-33.64 15.062-33.64 33.64 0 18.58 15.06 33.64 33.64 33.64h33.64V64c0-18.578-15.06-33.64-33.64-33.64zm.003 62.412c-15.24 0-27.905-11.83-28.935-26.94-.064-.772.386-1.543 1.157-1.865.707-.322 1.607-.193 2.186.386 3.795 3.793 8.425 5.85 13.054 5.85 10.288 0 18.582-8.357 18.582-18.58 0-4.695-2.058-9.324-5.85-13.118-.58-.58-.708-1.414-.387-2.122.32-.708 1.092-1.158 1.864-1.158 15.303.836 27.263 13.502 27.263 28.74 0 15.884-12.99 28.807-28.934 28.807z"/></svg>
                 </div>
                 <div class="rotate-money">
                     <div class="monopoly-money amount-500">
@@ -109,16 +137,124 @@
                     </div>
                 </div>
                 <div class="piece-rotate">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="piece"><path fill="#0FAECF" d="M64,123C31.467,123,5,96.533,5,64S31.467,5,64,5c32.533,0,59,26.467,59,59S96.533,123,64,123z"/><path fill="#1299B5" d="M64,10c29.775,0,54,24.224,54,54s-24.225,54-54,54c-29.776,0-54-24.224-54-54S34.224,10,64,10 M64,0 C28.654,0,0,28.654,0,64s28.654,64,64,64c35.347,0,64-28.654,64-64S99.347,0,64,0L64,0z"/><path fill="#1198B4" d="M87.101,71.916v-4.137H77.62v4.137H67.391V47.693c6.688-1.544,11.693-7.536,11.693-14.686	c0-8.317-6.766-15.083-15.083-15.083c-8.317,0-15.084,6.766-15.084,15.083c0,7.15,5.006,13.141,11.693,14.686v24.223H24v18.385	c0,3.185,2.59,5.775,5.774,5.775h68.451c3.185,0,5.774-2.59,5.774-5.775V71.916H87.101z M56.674,33.007	c0-4.04,3.287-7.327,7.327-7.327c4.04,0,7.326,3.287,7.326,7.327s-3.287,7.327-7.326,7.327	C59.961,40.334,56.674,37.047,56.674,33.007z M96.242,88.319H31.757v-8.646h64.485V88.319z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#0FAECF" d="M64 123C31.467 123 5 96.533 5 64S31.467 5 64 5s59 26.467 59 59-26.467 59-59 59z"/><path fill="#1299B5" d="M64 10c29.775 0 54 24.224 54 54s-24.225 54-54 54c-29.776 0-54-24.224-54-54s24.224-54 54-54m0-10C28.654 0 0 28.654 0 64s28.654 64 64 64c35.347 0 64-28.654 64-64S99.347 0 64 0z"/><path fill="#1198B4" d="M64 30.36c-18.58 0-33.64 15.062-33.64 33.64 0 18.58 15.06 33.64 33.64 33.64h33.64V64c0-18.578-15.06-33.64-33.64-33.64zm.003 62.412c-15.24 0-27.905-11.83-28.935-26.94-.064-.772.386-1.543 1.157-1.865.707-.322 1.607-.193 2.186.386 3.795 3.793 8.425 5.85 13.054 5.85 10.288 0 18.582-8.357 18.582-18.58 0-4.695-2.058-9.324-5.85-13.118-.58-.58-.708-1.414-.387-2.122.32-.708 1.092-1.158 1.864-1.158 15.303.836 27.263 13.502 27.263 28.74 0 15.884-12.99 28.807-28.934 28.807z"/></svg>
                 </div>
             </div>
         </div>
     </section>
     <section class="features">
         <div class="container">
-            <img src="img/poker-draft.jpg" alt="In-game poker screenshot">
+            <div class="grid">
+                <div class="feature col-4_sm-12">
+                    <img src="img/party.svg" alt="Party">
+                    <h3>Party mode <span>activate</span></h3>
+                    <p class="lead">Pairs best with many glasses of wine and a <a href="https://discord.com" target="_blank" rel="noopener">Discord</a> server</p>
+                    <p>Create a room with a playlist of games, invite friends and compete in classic board and card games.</p>
+                </div>
+                <div class="feature col-4_sm-12">
+                    <img src="img/cards.svg" alt="Playing Cards">
+                    <h3>Real-time <span>games</span></h3>
+                    <p class="lead">Super-fast gameplay. Everlasting fun.</p>
+                    <p>PSA: Playing GAMENIGHT games gives you XP, badges and severe nostalgia.</p>
+                </div>
+                <div class="feature col-4_sm-12">
+                    <img src="img/award.svg" alt="Badge">
+                    <h3>Collect XP and <span>badges</span></h3>
+                    <p class="lead">It's all about that level up lyfe</p>
+                    <p>Playing and winning games gives you XP towards leveling up your profile. Participation trophies for all!</p>
+                </div>
+            </div>
         </div>
     </section>
+    <section class="video">
+        <div class="container">
+            <img src="/img/screenshots/battleship.jpg" alt="A winning game of Battleship">
+            <!-- <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6ApnfeQ7ugE?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div> -->
+        </div>
+    </section>
+    <section class="room">
+        <div class="grid">
+            <div class="image col-6_sm-12">
+                <img src="img/screenshots/room-battleship.jpg" alt="A GAMENIGHT room starting a playlist of games">
+                <svg viewBox="0 0 100 100">
+                    <defs>
+                        <clipPath id="room-mask" clipPathUnits="objectBoundingBox" transform="scale(0.01, 0.018518519)">
+                            <path d="M59.5,0H0v54h59.5c14.912,0,27-12.088,27-27C86.5,12.089,74.412,0,59.5,0z"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="grid">
+                    <div class="col-6_sm-12"></div>
+                    <div class="content col-6_sm-12">
+                        <div class="container">
+                            <h3>Oh, and it's free forever</h3>
+                            <p class="lead">GAMENIGHT was built for fun so basic gameplay will always be free for everyone.</p>
+                            <a href="https://app.gamenight.gg" class="btn btn-primary">What are you waiting for?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="/img/logo-white.svg" alt="">
+                    GAMENIGHT
+                </div>
+                <p>For general or support enquiries<br><a href='mailt&#111;&#58;h&#37;65&#108;lo&#64;%67ame&#37;&#54;&#69;&#37;69g&#37;68t&#46;%67g'>h&#101;llo&#64;ga&#109;eni&#103;ht&#46;gg</a></p>
+                <div class="social">
+                    <a href="https://www.facebook.com/gamenightgg">
+                        <img src="/img/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/gamenightgg">
+                        <img src="/img/twitter.svg" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="legal">
+            <div class="container">
+                &copy; 2017 GAMENIGHT.
+                <div class="apps">
+                    <a href="https://app.gamenight.gg" class="btn btn-primary">
+                        <div class="image">
+                            <img src="/img/chrome.svg" alt="Web">
+                        </div>
+                        <div class="text">
+                            <p class="subtitle">Free to play</p>
+                            <p class="place">Web Version</p>
+                        </div>
+                    </a>
+                    <!-- <a class="btn btn-primary muted">
+                        <div class="image">
+                            <img src="/img/ios.svg" alt="iOS">
+                        </div>
+                        <div class="text">
+                            <p class="subtitle">iOS</p>
+                            <p class="place">App Store</p>
+                        </div>
+                    </a>
+                    <a class="btn btn-primary muted">
+                        <div class="image">
+                            <img src="/img/android.svg" alt="Android">
+                        </div>
+                        <div class="text">
+                            <p class="subtitle">Android</p>
+                            <p class="place">Google Play</p>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
         var dice = document.querySelector('.dice');
         window.setInterval(function() {

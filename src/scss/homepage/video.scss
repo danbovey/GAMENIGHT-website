@@ -1,0 +1,23 @@
+.video {
+    padding-bottom: 100px;
+
+    .container {
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        img, iframe {
+            width: 100%;
+            border-radius: 4px;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+    }
+}

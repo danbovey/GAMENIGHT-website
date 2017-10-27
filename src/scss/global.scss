@@ -9,9 +9,18 @@ body {
     color: #EFEFEF;
 }
 
+a {
+    color: $color-primary;
+}
+
 .container {
     max-width: 992px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.lead {
+    margin-bottom: 15px;
+    font-size: 18px;
 }

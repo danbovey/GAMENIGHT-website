@@ -1,0 +1,41 @@
+section.features {
+    padding-bottom: 40px;
+    color: $color-secondary;
+
+    @media(min-width: 768px) {
+        padding-bottom: 75px;
+    }
+
+    .feature {
+        max-width: 80vw;
+        margin: 0 auto 50px;
+        text-align: center;
+
+        &:nth-child(1) h3 span {
+            color: $color-primary;
+        }
+        &:nth-child(2) h3 span {
+            color: #5237EC;
+        }
+        &:nth-child(3) h3 span {
+            color: #55EC37;
+        }
+
+        @media(min-width: 768px) {
+            max-width: none;
+            margin: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    img {
+        transform: translateX(12%);
+        max-width: 150px;
+        max-height: 130px;
+        margin-bottom: 20px;
+    }
+    h3 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+}
