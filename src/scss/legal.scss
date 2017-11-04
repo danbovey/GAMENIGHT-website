@@ -1,12 +1,12 @@
-.faq {
+.legal {
     padding: 50px 0;
+    background: #FFF;
     color: $color-secondary;
 
-    h4 {
-        margin-top: 20px;
-        margin-bottom: 5px;
+    h3, p, ul {
+        margin: 1em 0;
     }
-    p {
+    p, li {
         line-height: 1.7;
     }
 }
